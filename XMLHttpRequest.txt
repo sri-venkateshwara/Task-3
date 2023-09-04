@@ -1,0 +1,124 @@
+Getting Country flag details:
+
+//Install xhr2 in node....
+
+let XMLHttpRequest = require('xhr2');
+
+//Creating an new request....
+
+let xhr = new XMLHttpRequest();
+
+//Getting an Api link....
+
+xhr.open('GET','https://restcountries.com/v3.1/all');
+
+//Function of the code....
+
+xhr.onload = function (){
+    let countrydetails = JSON.parse(xhr.responseText);
+    for(let i=0; i<countrydetails.length;i++)
+    console.log(countrydetails[i].flags);
+    
+}
+xhr.send();
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Getting Country name details:
+
+//Install xhr2 in node....
+
+let XMLHttpRequest = require('xhr2');
+
+//Creating an new request....
+
+let xhr = new XMLHttpRequest();
+
+//Getting an Api link....
+
+xhr.open('GET','https://restcountries.com/v3.1/all');
+
+//Function of the code....
+
+xhr.onload = function (){
+    let countrydetails = JSON.parse(xhr.responseText);
+    for(let i=0; i<countrydetails.length;i++)
+    console.log(countrydetails[i].name);
+    
+}
+xhr.send();
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Getting Country region details:
+
+//Install xhr2 in node....
+
+let XMLHttpRequest = require('xhr2');
+
+//Creating an new request....
+
+let xhr = new XMLHttpRequest();
+
+//Getting an Api link....
+
+xhr.open('GET','https://restcountries.com/v3.1/all');
+
+//Function of the code....
+
+xhr.onload = function (){
+    let countrydetails = JSON.parse(xhr.responseText);
+    for(let i=0; i<countrydetails.length;i++)
+    console.log(countrydetails[i].region);
+    
+}
+xhr.send();
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Getting Country subregion details:
+
+//Install xhr2 in node....
+
+let XMLHttpRequest = require('xhr2');
+
+//Creating an new request....
+
+let xhr = new XMLHttpRequest();
+
+//Getting an Api link....
+
+xhr.open('GET','https://restcountries.com/v3.1/all');
+
+//Function of the code....
+
+xhr.onload = function (){
+    let countrydetails = JSON.parse(xhr.responseText);
+    for(let i=0; i<countrydetails.length;i++)
+    console.log(countrydetails[i].subregion);
+    
+}
+xhr.send();
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Getting Country population details:
+
+//Install xhr2 in node....
+
+let XMLHttpRequest = require('xhr2');
+
+//Creating an new request....
+
+let xhr = new XMLHttpRequest();
+
+//Getting an Api link....
+
+xhr.open('GET','https://restcountries.com/v3.1/all');
+
+//Function of the code....
+
+xhr.onload = function (){
+    let countrydetails = JSON.parse(xhr.responseText);
+    for(let i=0; i<countrydetails.length;i++)
+    console.log(countrydetails[i].population);
+    
+}
+xhr.send();
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+
